@@ -2,6 +2,9 @@
 
 Using Angular 14 and Bootstrap 5.2.
 
+## Deployed
+[Link to site](https://kbatyrbayev.github.io/ziphr-assignment-frontend/)
+
 ## Development
 
 Start serving the application to `http://localhost:4000`.
