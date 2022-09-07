@@ -38,4 +38,15 @@ export class AppService {
       },
     });
   }
+
+  /**
+   * update the todo list
+   * @param {Todo} type: todo object
+   */
+  updateTodos(todo: Todo): void {
+    const todos = [todo, ...this.todos.value];
+    this.todos.next(todos);
+  }
+
+
 }

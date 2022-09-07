@@ -1,3 +1,4 @@
+import { FormControl } from '@angular/forms';
 import { TodoPriority } from '../enums/todo-priority';
 
 /**
@@ -13,4 +14,19 @@ export interface Todo {
   date: number;
   // Priority of the task
   priority: TodoPriority;
+}
+
+/**
+ * Type of todo form
+ * @see CreateTodosComponent.form
+ */
+export interface TodoForm {
+  // Title of the task
+  title: FormControl<string>;
+  // Is this task completed/done?
+  done: FormControl<boolean>;
+  // Due date of the task (milliseconds)
+  date: FormControl<number>;
+  // Priority of the task
+  priority: FormControl<null|TodoPriority>;
 }
